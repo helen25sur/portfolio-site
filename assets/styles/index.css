@@ -1,2 +1,42 @@
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif; */
+:root {
+  /* Font Family */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+
+  /* themes color */
+  --clr-primary: #AA003C;
+  --clr-secondary: #f4f4f4;
+  --clr-tertiary: #0c0d0d;
+  --clr-gray: #d1d1d1;
+  --clr-subtitle: #80001F;
+  --clr-body-white: #3f4042;
+  --clr-white: #ffffff;
+
+  --shadow-white-3: 5px 5px 15px #D1D9E6, -5px -5px 15px var(--clr-white);
+
+  /* Gradients */
+  --gradient-box-w: linear-gradient(145deg, #e2e8ec, var(--clr-white));
+  --gradient-red-hover: linear-gradient(145deg, var(--clr-primary), var(--clr-subtitle));
+
+  /* Font weight */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+  --fw-black: 900;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
