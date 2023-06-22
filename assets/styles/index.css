@@ -229,10 +229,8 @@ a {
 
 .about__job-title::after {
   position: absolute;
-  content: '';
-  height: 100%;
-  width: 2px;
-  background-color: var(--clr-primary);
+  content: '|';
+  color: var(--clr-primary);
   animation: pointerAnimate 2.3s linear;
 }
 
