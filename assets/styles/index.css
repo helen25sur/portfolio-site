@@ -169,7 +169,7 @@ a {
   font-size: 20px;
 }
 
-.social-list {
+.hero-section .social-list {
   justify-content: center;
 }
 
@@ -206,6 +206,83 @@ a {
   height: 1px;
   background: #dce1e4;
   border: none;
+}
+
+/* ============= about-section =============== */
+.about-section {
+  padding: 6rem 0;
+}
+
+.about-wrapper {
+  margin-right: 3rem;
+}
+
+.about__job-title {
+  position: relative;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  min-width: 10px;
+  display: inline-block;
+
+}
+
+.about__job-title::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 2px;
+  background-color: var(--clr-primary);
+  animation: pointerAnimate 2.3s linear;
+}
+
+@keyframes pointerAnimate {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.title-animate {
+  display: inline-block;
+  min-width: 10px;
+  opacity: 0;
+  animation-fill-mode: both;
+  cursor: text;
+  animation: bounceIn 1s 1s forwards;
+}
+
+.about-header .section-subtitle {
+  color: var(--clr-body-white);
+}
+
+.about-section .social-list {
+  justify-content: start;
+}
+
+.about-descr {
+  margin-bottom: 3rem;
+  width: 80%;
+}
+
+.about-photo-wrapper {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.about-photo-wrapper::after {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: calc(100% - 140px);
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow: var(--shadow-white-3);
+  background: var(--gradient-box-w);
 }
 
 /* =========== Features ============ */
