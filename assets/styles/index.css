@@ -283,13 +283,15 @@ a {
   background: var(--gradient-box-w);
 }
 
-/* =========== Features ============ */
+/* =========== Features & Portfolio ============ */
 
-.features-section {
+.features-section,
+.portfolio-section {
   padding: 5rem 0;
 }
 
-.features-list {
+.features-list,
+.portfolio-list {
   margin-top: 5rem;
   display: grid;
   gap: 2rem;
@@ -297,11 +299,16 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.features-item {
+.features-item,
+.portfolio-item {
   padding: 2rem;
   box-shadow: var(--shadow-white-3);
   background: var(--gradient-box-w);
   border-radius: 8px;
+}
+
+.portfolio-item {
+  text-align: center;
 }
 
 .features-icon {
@@ -310,12 +317,43 @@ a {
   text-align: center;
 }
 
-.features-title {
+.features-title,
+.portfolio-title {
   margin: 1rem 0;
   font-weight: var(--fw-medium);
   font-size: 24px;
   line-height: 32px;
   text-align: center;
+}
+
+.portfolio-screen {
+  width: 100%;
+}
+
+.portfolio-link-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 15px 35px;
+  background: var(--gradient-box-w);
+  box-shadow: var(--shadow-white-3);
+  color: var(--clr-primary);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: var(--fw-medium);
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.portfolio-link-btn:active,
+.portfolio-link-btn:hover,
+.portfolio-link-btn:focus {
+  color: var(--clr-white);
+  background: var(--gradient-red-hover);
+}
+
+.portfolio-link-btn>i {
+  display: inline-block;
+  margin-left: 8px;
 }
 
 /* =========== Footer ========== */
