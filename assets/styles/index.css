@@ -376,6 +376,14 @@ a {
   gap: 0.75rem;
 }
 
+.footer-wrapper .social-list {
+  margin-bottom: 2rem;
+}
+
+.footer-op {
+  color: grey;
+}
+
 /* ============ Contacts ========== */
 
 .contact-content {
