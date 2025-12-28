@@ -1,6 +1,7 @@
 {
   "name": "portfolio-site",
   "version": "1.0.0",
+  "source": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,10 +20,15 @@
   "homepage": "https://github.com/helen25sur/portfolio-site#readme",
   "description": "",
   "dependencies": {
+    "@parcel/config-default": "^2.16.3",
+    "parcel-reporter-static-files-copy": "^1.5.3",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "parcel": "^2.16.3"
+  }, 
+  "staticFiles": {
+    "staticPath": "static"
   }
 }
