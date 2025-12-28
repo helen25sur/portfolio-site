@@ -8,11 +8,11 @@ export const ProjectList = ({ projects }) => {
           {projects.map((proj, index) => (
             <li className="portfolio-item" key={index}>
               <img className="portfolio-screen" src={proj.img}
-                alt={"Screenshot of " + proj.name} />
+                alt={"Screenshot of " + proj.name} loading="lazy" />
               <h3 className="portfolio-title">{proj.name}</h3>
               <p className="portfolio-descr">{proj.tech}</p>
               <a className="portfolio-link-btn" href={proj.link}
-                title={"More about " + proj.name} target="_blank">View
+                title={"More about " + proj.name} target="_blank" rel="noopener noreferrer">View
                 this project <i className="fa-solid fa-up-right-from-square"></i></a>
             </li>
           ))}
