@@ -1,14 +1,15 @@
-const btn = document.getElementById('mob-menu-btn');
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { ProjectList } from "./ProjectList.js";
 
-btn.addEventListener('click', () => {
-  btn.classList.toggle('animated');
-  btn.classList.toggle('not-animated');
-});
+const projects = [
+  {
+    name: "Project One",
+    tech: "React, Node.js",
+    link: "#",
+  },
+];
 
-const jobTitle = document.querySelector('.about__job-title');
-let nStrJobTitle = '';
-[...jobTitle.innerText].forEach((letter, idx) => {
-  nStrJobTitle += `<span class="title-animate animate__animated" style="animation-delay: ${idx / 10}s;">${letter}</span>`;
-});
-jobTitle.innerHTML = '';
-jobTitle.innerHTML = nStrJobTitle;
+const container = document.getElementById("portfolio");
+const root = createRoot(container);
+root.render(<ProjectList projects={projects} />);
