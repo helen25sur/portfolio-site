@@ -2,6 +2,20 @@ import { createRoot } from "react-dom/client";
 import { ProjectList } from "./scripts/ProjectList.js";
 
 const projects = [
+    {
+    id: "product-store-tailwind",
+    name: "Product Store with Tailwind CSS",
+    img: "/assets/images/projects/product-store-tailwind.png",
+    tech: "Built with HTML, CSS, React.js and Tailwind CSS",
+    link: "https://helen25sur.github.io/product-store-tailwind/",
+  },
+    {
+    id: "onua-site",
+    name: "Main Page National University 'Odesa Law Academy'",
+    img: "/assets/images/projects/onua-site.png",
+    tech: "Built with HTML, CSS and JavaScript",
+    link: "https://onua.edu.ua/ua/",
+  },
   {
     id: "weather-app",
     name: "Weather App",
