@@ -5,8 +5,8 @@ export const ProjectList = ({ projects }) => {
         <h4 className="section-subtitle emphasise-txt">Portfolio</h4>
         <h2 className="section-title">Watch my projects</h2>
         <ul className="portfolio-list">
-          {projects.map((proj, index) => (
-            <li className="portfolio-item" key={index}>
+          {projects.map((proj) => (
+            <li className="portfolio-item" key={proj.id}>
               <img className="portfolio-screen" src={proj.img}
                 alt={"Screenshot of " + proj.name} loading="lazy" />
               <h3 className="portfolio-title">{proj.name}</h3>
