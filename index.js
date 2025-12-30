@@ -7,13 +7,15 @@ const projects = [
     name: "Product Store with Tailwind CSS",
     img: "/assets/images/projects/product-store-tailwind.png",
     tech: "Built with HTML, CSS, React.js and Tailwind CSS",
+    description: "A high-performance digital storefront designed for a seamless shopping experience. The application features dynamic product rendering and a responsive interface built with React.js. It includes advanced functionality such as real-time category filtering, a persistent shopping cart, and a sleek, mobile-first design powered by Tailwind CSS.",
     link: "https://helen25sur.github.io/product-store-tailwind/",
   },
     {
     id: "onua-site",
-    name: "Main Page National University 'Odesa Law Academy'",
+    name: "Main Page National University 'Odesa Law Academy' Homepage",
     img: "/assets/images/projects/onua-site.png",
     tech: "Built with HTML, CSS and JavaScript",
+    description: "A professional frontend implementation of the university's official landing page. The project focuses on a clean, authoritative design with a highly organized information architecture. It features a responsive grid layout, interactive navigation, and optimized media content to ensure a seamless experience for students and visitors.",
     link: "https://onua.edu.ua/ua/",
   },
   {
