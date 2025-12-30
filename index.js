@@ -7,7 +7,7 @@ const projects = [
     name: "Product Store with Tailwind CSS",
     img: "/assets/images/projects/product-store-tailwind.png",
     tech: "Built with HTML, CSS, React.js and Tailwind CSS",
-    description: "A high-performance digital storefront designed for a seamless shopping experience. The application features dynamic product rendering and a responsive interface built with React.js. It includes advanced functionality such as real-time category filtering, a persistent shopping cart, and a sleek, mobile-first design powered by Tailwind CSS.",
+    description: "A frontend-focused e-commerce application designed with a mobile-first approach. The project emphasizes clean component architecture. Styled exclusively with Tailwind CSS, it demonstrates the ability to create sophisticated, modern interfaces with high performance and intuitive user flows.",
     link: "https://helen25sur.github.io/product-store-tailwind/",
   },
     {
@@ -23,13 +23,15 @@ const projects = [
     name: "Weather App",
     img: "/assets/images/projects/weather-app.png",
     tech: "Built with HTML, CSS and JavaScript",
+    description: "A sleek, interactive weather application providing real-time meteorological data. The project features a modern UI design, offering users a clear and visually appealing way to track current conditions and multi-day forecasts. Built with a focus on asynchronous API integration and dynamic DOM manipulation to ensure accurate, up-to-the-minute weather updates for any location.",
     link: "https://guileless-pastelito-470cc1.netlify.app/",
   },
   {
     id: "calendar-app",
-    name: "Calendar App",
+    name: "Interactive Glassmorphism Calendar",
     img: "/assets/images/projects/calendar-app.png",
     tech: "Built with HTML, CSS and JavaScript",
+    description: "A visually elegant UI component featuring a modern 'glass' effect with soft transparency and background blurring. This project focuses on high-end CSS styling and precise layout management. It provides a clean, intuitive interface for date tracking, demonstrating a strong command of modern web design trends and aesthetic consistency.",
     link: "https://helen25sur.github.io/calendar-component/",
   },
    {
