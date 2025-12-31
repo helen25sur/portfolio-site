@@ -190,6 +190,10 @@
   .contact-img {
     max-width: 50%;
   }
+
+  .resume-list-block {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 560px) {
