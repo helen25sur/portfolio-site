@@ -151,6 +151,13 @@
   width: 100%;
 }
 
+.portfolio-image-block {
+  width: 100%;
+}
+
+.portfolio-card-content{
+  width: 100%;
+}
 
 
 @media screen and (max-width: 750px) {

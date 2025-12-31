@@ -580,6 +580,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 2rem;
 }
 
