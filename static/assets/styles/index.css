@@ -557,6 +557,8 @@ a {
   font-weight: var(--fw-extra-bold);
 }
 
+/* ============== portfolio-card ================ */
+
 .portfolio-card {
   position: fixed;
   padding: 60px 15px;
@@ -666,4 +668,37 @@ a {
 
 .tech-item:hover {
   box-shadow: var(--shadow-white-3);
+}
+
+/* ====================== ProjectFilter ================= */
+.project-filter {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tech-filter-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tech-filter-btn {
+  box-shadow: var(--shadow-white-3);
+  background: var(--gradient-box-w);
+  border: none;
+  border-radius: 4px;
+  margin: 4px 8px;
+  padding: 16px 20px;
+  color: var(--clr-primary);
+  font-size: 14px;
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.tech-filter-btn:hover,
+.active-tech-btn {
+  background: var(--gradient-red-hover);
+  color: var(--clr-white);
 }

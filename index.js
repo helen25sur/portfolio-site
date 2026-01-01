@@ -102,6 +102,10 @@ const projects = [
   },
 ];
 
+const technologies = [
+ "All", "HTML5", "CSS3", "JavaScript (ES6+)", "React.js", "Vue.js", "Node.js", "Express.js", "REST API", "Tailwind CSS",
+   ]
+
 const container = document.getElementById("portfolio");
 const root = createRoot(container);
-root.render(<ProjectList projects={projects} />);
+root.render(<ProjectList projects={projects} technologies={technologies} />);
