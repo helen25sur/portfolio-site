@@ -3,6 +3,7 @@ const btn = document.getElementById('mob-menu-btn');
 btn.addEventListener('click', () => {
   btn.classList.toggle('animated');
   btn.classList.toggle('not-animated');
+  console.log('Burger menu button clicked');
 });
 
 const jobTitle = document.querySelector('.about__job-title');

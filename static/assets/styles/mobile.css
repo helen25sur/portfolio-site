@@ -4,10 +4,14 @@
 }
 
 .mob-burger {
-  padding: 3px 0;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   order: 1;
+  cursor: pointer;
+  z-index: 100;
+  transform: translateX(40px);
+  position: relative;
 }
 
 .mob-burger-span {
@@ -149,6 +153,7 @@
 
 .my-photo {
   width: 100%;
+  height: auto;
 }
 
 .portfolio-image-block {

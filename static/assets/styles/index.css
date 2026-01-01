@@ -94,6 +94,10 @@ a {
   color: var(--clr-primary);
 }
 
+a.emphasise-txt {
+  text-decoration: underline;
+}
+
 .section-title {
   margin: 2rem 0;
   font-size: 3.5rem;
@@ -123,6 +127,10 @@ a {
   justify-content: space-between;
 }
 
+.logo-wrapper {
+  z-index: 100;
+}
+
 .header_logo-round {
   background-color: var(--clr-body-white);
   border-radius: 50%;
@@ -144,6 +152,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: var(--transition);
+  padding: 12px 0;
 }
 
 .nav-link:hover {
@@ -363,6 +372,7 @@ a {
 
 .portfolio-screen {
   width: 100%;
+  height: auto;
 }
 
 .portfolio-link-btn,
@@ -519,7 +529,7 @@ a {
 }
 
 .footer-op {
-  color: grey;
+  color: var(--clr-body-white);
 }
 
 /* ============ Contacts ========== */
@@ -534,7 +544,8 @@ a {
 
 .contact-img {
   display: block;
-  max-width: 33%;
+  max-width: 40%;
+  height: auto;
   border-radius: 4px;
 }
 
@@ -543,6 +554,7 @@ a {
   font-weight: var(--fw-medium);
   font-size: 1.5rem;
   row-gap: 0.5rem;
+  text-decoration: underline;
 }
 
 .contacts-link:active,

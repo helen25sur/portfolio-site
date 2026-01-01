@@ -13,7 +13,7 @@ export const ProjectItem = ({ proj }) => {
      <ProjectCard proj={proj} openCard={openCard} />
     ) : (
       <li className="portfolio-item" >
-        <img className="portfolio-screen" src={proj.img} alt={"Screenshot of " + proj.name} loading="lazy" />
+        <img className="portfolio-screen" src={proj.img} alt={"Screenshot of " + proj.name} loading="lazy" width={"1181px"} height={"655px"} />
         <h3 className="portfolio-title" onClick={openCard}>{proj.name}
           <i className="fa-solid fa-arrow-right"></i>
         </h3>

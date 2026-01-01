@@ -10,13 +10,14 @@
   <meta property="og:description"
     content="I'm Olena Surilova, a Junior Web Developer & Professional Coder. I am eager to further develop my skills in a collaborative environment with like-minded individuals who share my passion for web development.">
   <meta property="og:url" content="https://surilova.netlify.app/">
-  <meta property="og:image" content="https://surilova.netlify.app/assets/images/surilova-round.png">
+  <meta property="og:image" content="https://surilova.netlify.app/assets/images/surilova-round.webp">
   <meta property="og:type" content="website">
   <title>Olena Surilova | Web Developer</title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
+    rel="preconnect"
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -32,18 +33,17 @@
     <div class="header-wrapper flex">
       <div class="logo-wrapper">
         <a href="/" title="Homepage" class="logo-link flex">
-          <img width="64" class="header_logo-round" src="/static/assets/images/surilova-round.png" alt="round avatar">
+          <img width="64px" height="64px" class="header_logo-round" src="/static/assets/images/surilova-round.webp" alt="round avatar">
           <h3 class="logo-title">Surilova</h3>
         </a>
       </div>
       <nav class="main-navigation flex">
-        <button id="mob-menu-btn" class="mob-burger btn not-animated">
+        <button aria-label="Open navigation menu" id="mob-menu-btn" class="mob-burger btn not-animated">
           <span class="mob-burger-span"></span>
           <span class="mob-burger-span"></span>
           <span class="mob-burger-span"></span>
         </button>
         <ul class="nav-list flex">
-          <!-- <li class="nav-item"><a href="/" title="Homepage" class="nav-link active">Homepage</a></li> -->
           <li class="nav-item"><a href="#about-section" title="About Olena" class="nav-link">About Me</a></li>
           <li class="nav-item"><a href="#features-section" title="Olena's Feature" class="nav-link">Feature</a></li>
           <li class="nav-item"><a href="#portfolio" title="Olena's Portfolio" class="nav-link">Portfolio</a>
@@ -93,7 +93,7 @@
       <section id="about-section" class="about-section flex">
         <div class="about-wrapper">
           <header class="about-header">
-            <h4 class="section-subtitle">Welcome to my world</h4>
+            <h3 class="section-subtitle">Welcome to my world</h3>
             <h1 class="section-title">Hello, I'm <span class="emphasise-txt">Olena Surilova</span></h1>
             <h2 class="about__job-title ">
               a Web-Developer &<br> Coder.
@@ -118,7 +118,7 @@
 
         </div>
         <div class="about-photo-wrapper">
-          <img class="my-photo" src="/static/assets/images/surilova.png" alt="Olena Surilova">
+          <img class="my-photo" src="/static/assets/images/surilova.png" alt="Olena Surilova" width="400px" height="600px">
         </div>
       </section>
 
@@ -221,7 +221,7 @@
                   <span>Tsantakides, Thessaloniki, Liti, Greece (07.2023 – 06.2024)</span>
                   <p class="resume-descr">
                     <strong>Achievements:</strong> Engineered a robust, full-cycle eCommerce platform from scratch, ensuring high performance and scalability. Developed and integrated an intuitive product search and filtering system, which streamlined the user journey and significantly reduced the bounce rate by improving product discoverability.<br>
-                    Link: <a href="https://tsantakides.gr/" target="_blank" rel="noopener noreferrer">https://tsantakides.gr/</a> 
+                    Link: <a class="emphasise-txt" href="https://tsantakides.gr/" target="_blank" rel="noopener noreferrer">https://tsantakides.gr/</a> 
                   </p>
                 </li>
                 <li class="resume-item">
@@ -231,7 +231,7 @@
                   <span>National University “Odesa Law Academy”, Odesa, Ukraine (06.2017 – 09.2022)</span>
                   <p class="resume-descr">
                     <strong>Achievements:</strong> Led the full-cycle development and successful launch of the university’s official web portal. By designing an data-driven homepage architecture and optimizing user interface (UI) elements, achieved a 25% increase in organic web traffic and enhanced overall user engagement.<br>
-                    Link: <a href="https://onua.edu.ua/en/" target="_blank" rel="noopener noreferrer">https://onua.edu.ua/en/</a> 
+                    Link: <a class="emphasise-txt" href="https://onua.edu.ua/en/" target="_blank" rel="noopener noreferrer">https://onua.edu.ua/en/</a> 
                   </p>
                 </li>
                 <li class="resume-item">
@@ -241,7 +241,7 @@
                   <span>UkrFerry, Odesa, Ukraine (10.2021 – 12.2021)</span>
                   <p class="resume-descr">
                     <strong>Achievements:</strong> Developed a production-ready frontend for a complex ferry booking system catering to both cargo and passenger transportation. The platform’s architecture proved so sustainable that it has remained operationally effective for over 4 years without requiring major refactoring.</br>
-                    Link: <a href="https://gsways.com/eng/" target="_blank" rel="noopener noreferrer">https://gsways.com/eng/</a> 
+                    Link: <a class="emphasise-txt" href="https://gsways.com/eng/" target="_blank" rel="noopener noreferrer">https://gsways.com/eng/</a> 
                   </p>
                 </li>
               </ul>
@@ -262,7 +262,7 @@
           <div class="contact-content flex">
             <img class="contact-img"
               src="https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-              alt="Photo by LinkedIn Sales Solutions on Unsplash">
+              alt="Photo by LinkedIn Sales Solutions on Unsplash" width="443px" height="665px">
             <div class="contacts">
               <ul class="contacts-list flex flex-column">
                 <li class="contacts-item"><a class="contacts-link" href="mailto:elen21surilova@gmail.com"
@@ -298,9 +298,9 @@
       <div class="footer-wrapper flex">
         <div class="logo-footer-wrapper">
           <a href="/" title="Homepage" class="logo-footer-link flex">
-            <img width="72" class="header_logo-round" src="/static/assets/images/surilova-round.png" alt="round avatar">
-            <h3 class="logo-title">Olena Surilova</h3>
-            <h4>Web Developer</h4>
+            <img width="72px" height="72px" class="header_logo-round" src="/static/assets/images/surilova-round.webp" alt="round avatar">
+            <h2 class="logo-title">Olena Surilova</h2>
+            <h3>Web Developer</h3>
           </a>
         </div>
         <a class="emphasise-txt" href="mailto:elen21surilova@gmail.com" title="Mail Olena">elen21surilova@gmail.com</a>
