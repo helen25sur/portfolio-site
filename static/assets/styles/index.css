@@ -232,7 +232,7 @@ a.emphasise-txt {
 }
 
 /* ============= about-section =============== */
-.about-section {
+/* .about-section {
   padding: 6rem 0;
 }
 
@@ -304,7 +304,7 @@ a.emphasise-txt {
   bottom: 0;
   box-shadow: var(--shadow-white-3);
   background: var(--gradient-box-w);
-}
+} */
 
 /* =========== Features & Portfolio ============ */
 

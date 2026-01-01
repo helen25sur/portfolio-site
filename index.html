@@ -20,12 +20,118 @@
     rel="preconnect"
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500&display=swap"
     rel="stylesheet">
+  <style>
+    /* ============= about-section =============== */
+.about-section {
+  padding: 6rem 0;
+}
+
+.about-wrapper {
+  margin-right: 3rem;
+}
+
+.about__job-title {
+  position: relative;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  min-width: 10px;
+  display: inline-block;
+
+}
+
+.about__job-title::after {
+  position: absolute;
+  content: '|';
+  color: var(--clr-primary);
+  animation: pointerAnimate 2.3s linear;
+}
+
+@keyframes pointerAnimate {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.title-animate {
+  display: inline-block;
+  min-width: 10px;
+  opacity: 0;
+  animation-fill-mode: both;
+  cursor: text;
+  animation: bounceIn 1s 1s forwards;
+}
+
+.about-header .section-subtitle {
+  color: var(--clr-body-white);
+}
+
+.about-section .social-list {
+  justify-content: start;
+}
+
+.about-descr {
+  margin-bottom: 3rem;
+  width: 80%;
+}
+
+.about-photo-wrapper {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.about-photo-wrapper::after {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: calc(100% - 140px);
+  content: "";
+  left: 0;
+  bottom: 0;
+  box-shadow: var(--shadow-white-3);
+  background: var(--gradient-box-w);
+}
+
+@media screen and (max-width: 900px) {
+  .about-section {
+  flex-direction: column;
+}
+
+.about-wrapper {
+  order: 1;
+}
+
+.about-photo-wrapper {
+  order: 0;
+  margin-bottom: 4rem;
+}
+
+.my-photo {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-image-block {
+  width: 100%;
+}
+
+.portfolio-card-content{
+  width: 100%;
+}
+
+}
+  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="/static/assets/styles/index.css">
   <link rel="stylesheet" href="/static/assets/styles/mobile.css" media="screen and (max-width: 900px)">
   <script src="https://kit.fontawesome.com/f40fd5b04a.js" crossorigin="anonymous" defer></script>
   <script src="/scripts/main.js" defer></script>
   <script type="module" src="/index.js" defer></script>
+  <link rel="preload" as="image" href="/static/assets/images/surilova.webp">
 </head>
 
 <body>
@@ -58,36 +164,6 @@
 
   <main class="main-content">
     <div class="container">
-      <!-- <section class="hero-section flex">
-        <div class="hero-wrapper">
-          <header class="hero-header">
-            <h4 class="section-subtitle">Welcome to my world</h4>
-            <h1 class="section-title">Hello, I'm <span class="emphasise-txt">Olena Surilova</span></h1>
-            <h2 class="about__job-title ">
-              a Web-Developer &<br> Coder.
-            </h2>
-          </header>
-          <div class="social-links">
-            <h4 class="social-caption">contact me</h4>
-            <ul class="social-list flex">
-              <li class="social-item"><a href="https://github.com/helen25sur" title="GitHub Profile" target="_blank"
-                  rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-github"></i></a></li>
-              <li class="social-item"><a href="https://www.linkedin.com/in/olena-surilova-8aa66b122/"
-                  title="LinkedIn Profile" target="_blank" rel="noopener noreferrer" class="social-link"><i
-                    class="fa-brands fa-linkedin"></i></a></li>
-              <li class="social-item"><a href="https://www.facebook.com/profile.php?id=100010637710926"
-                  title="Facebook Profile" target="_blank" rel="noopener noreferrer" class="social-link"><i
-                    class="fa-brands fa-facebook"></i></a></li>
-              <li class="social-item"><a href="https://www.instagram.com/elena_sur26/" title="Instagram Profile"
-                  target="_blank" rel="noopener noreferrer" class="social-link"><i
-                    class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
-      <hr class="section-separator"> -->
 
       <!-- From Pages -->
       <section id="about-section" class="about-section flex">
@@ -118,7 +194,7 @@
 
         </div>
         <div class="about-photo-wrapper">
-          <img class="my-photo" src="/static/assets/images/surilova.png" alt="Olena Surilova" width="400px" height="600px">
+          <img class="my-photo" src="/static/assets/images/surilova.webp" alt="Olena Surilova" width="400px" height="600px">
         </div>
       </section>
 

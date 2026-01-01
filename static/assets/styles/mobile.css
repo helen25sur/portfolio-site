@@ -138,7 +138,7 @@
 }
 
 
-.about-section {
+/* .about-section {
   flex-direction: column;
 }
 
@@ -162,7 +162,7 @@
 
 .portfolio-card-content{
   width: 100%;
-}
+} */
 
 
 @media screen and (max-width: 750px) {
