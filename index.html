@@ -37,7 +37,6 @@
   line-height: 3rem;
   min-width: 10px;
   display: inline-block;
-
 }
 
 .about__job-title::after {
@@ -128,7 +127,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="/static/assets/styles/index.css">
   <link rel="stylesheet" href="/static/assets/styles/mobile.css" media="screen and (max-width: 900px)">
-  <script src="https://kit.fontawesome.com/f40fd5b04a.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+      media="print" onload="this.media='all'">
   <script src="/scripts/main.js" defer></script>
   <script type="module" src="/index.js" defer></script>
   <link rel="preload" as="image" href="/static/assets/images/surilova.webp">
@@ -172,14 +172,14 @@
             <h3 class="section-subtitle">Welcome to my world</h3>
             <h1 class="section-title">Hello, I'm <span class="emphasise-txt">Olena Surilova</span></h1>
             <h2 class="about__job-title ">
-              a Web-Developer &<br> Coder.
+              a Web-Developer &&nbsp;Coder.
             </h2>
             <p class="about-descr">I am eager to further develop my skills in a collaborative environment with
               like-minded individuals who
               share my passion for web development.</p>
           </header>
           <div class="social-links">
-            <h4 class="social-caption">contact me</h4>
+            <h3 class="social-caption">contact me</h3>
             <ul class="social-list flex">
               <li class="social-item"><a href="https://github.com/helen25sur" title="GitHub Profile" target="_blank"
                   rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-github"></i></a></li>
@@ -194,7 +194,7 @@
 
         </div>
         <div class="about-photo-wrapper">
-          <img class="my-photo" src="/static/assets/images/surilova.webp" alt="Olena Surilova" width="400px" height="600px">
+          <img class="my-photo" src="/static/assets/images/surilova.webp" alt="Olena Surilova" width="400px" height="600px" fetchpriority="high">
         </div>
       </section>
 
