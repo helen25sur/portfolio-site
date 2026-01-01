@@ -652,3 +652,18 @@ a {
   font-size: 20px;
   margin: 1.5rem 0;
 }
+
+.tech-item {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 6px 12px;
+  color: #9F1239;
+  border-radius: 4px;
+  background-color: rgba(159, 18, 57, 0.05);
+  font-size: 12px;
+  transition: var(--transition);
+}
+
+.tech-item:hover {
+  box-shadow: var(--shadow-white-3);
+}

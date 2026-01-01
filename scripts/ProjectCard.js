@@ -40,11 +40,21 @@ export const ProjectCard = ({ proj, openCard }) => {
         <div className="portfolio-card-content">
           <h3 className="portfolio-title portfolio-card-title">{proj.name}</h3>
           <p className="full-descr">{proj.description}</p>
-          <p className="portfolio-descr">{proj.tech}</p>
+          <p className="portfolio-descr">{
+          proj.tech.map((tech, index) => (
+            <span className="tech-item" key={index}>
+              {tech}
+            </span>
+          ))
+          }</p>
           <a className="portfolio-link-btn" href={proj.link} target="_blank" rel="noopener noreferrer">
             View this project <i className="fa-solid fa-up-right-from-square"></i>
           </a>
-          <button className="close-card-btn" onClick={openCard}><i className="fa-solid fa-x"></i></button>
+          { proj.codeLink ?
+          ( <a className="portfolio-link-btn" href={proj.codeLink} target="_blank" rel="noopener noreferrer">
+            GitHub code <i className="fa-brands fa-square-github"></i>
+          </a> ) : null }
+          <button className="close-card-btn" onClick={openCard}><i className="fa-solid fa-x"></i></button> 
 
         </div>
       </dialog>

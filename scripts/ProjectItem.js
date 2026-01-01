@@ -17,7 +17,16 @@ export const ProjectItem = ({ proj }) => {
         <h3 className="portfolio-title" onClick={openCard}>{proj.name}
           <i className="fa-solid fa-arrow-right"></i>
         </h3>
-        <p className="portfolio-descr">{proj.tech}</p>
+        <p className="portfolio-descr">{
+          proj.tech.map((tech, index) => (
+            <span className="tech-item" key={index}>
+              {tech}
+            </span>
+          ))
+          }</p>
+        <a className="portfolio-link-btn" href={proj.link} target="_blank" rel="noopener noreferrer">
+            View this project <i className="fa-solid fa-up-right-from-square"></i>
+          </a>
       </li>
     )
   )
