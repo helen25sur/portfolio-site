@@ -213,12 +213,21 @@ a.emphasise-txt {
   height: 100%;
   line-height: 48px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: var(--transition);
 }
 
 .social-link:hover {
   background: var(--gradient-red-hover);
   color: var(--clr-secondary);
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--clr-body-white);
 }
 
 .section-separator {
@@ -335,9 +344,13 @@ a.emphasise-txt {
 }
 
 .features-icon {
-  color: var(--clr-primary);
-  font-size: 32px;
   text-align: center;
+}
+
+.features-icon svg {
+  fill: var(--clr-primary);
+  width: 32px;
+  height: 32px;
 }
 
 .features-title,
@@ -348,19 +361,23 @@ a.emphasise-txt {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
+  vertical-align: baseline;
 }
 
-.portfolio-title .fa-arrow-right {
+.portfolio-title svg {
   opacity: 0;
+  width: 24px;
+  position: relative;
+  top: 4px;
 }
 
 .portfolio-title:hover {
-  color: var(--clr-subtitle);
+  fill: var(--clr-subtitle);
   cursor: pointer;
   transition: var(--transition);
 }
 
-.portfolio-title:hover .fa-arrow-right {
+.portfolio-title:hover svg {
   opacity: 1;
   margin-left: 8px;
   transition: var(--transition);
@@ -550,6 +567,13 @@ a.emphasise-txt {
   font-weight: var(--fw-medium);
   font-size: 1.5rem;
   row-gap: 0.5rem;
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  gap: 4px;
+}
+
+.contacts-list span {
   text-decoration: underline;
 }
 
@@ -559,10 +583,13 @@ a.emphasise-txt {
   text-decoration: underline;
 }
 
-.contacts-link i {
-  display: inline-block;
-  margin-right: 8px;
-  font-weight: var(--fw-extra-bold);
+.contacts-link svg {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  position: relative;
+  top: 6px;
+  fill: var(--clr-primary);
 }
 
 /* ============== portfolio-card ================ */
