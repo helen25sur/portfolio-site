@@ -134,6 +134,8 @@ a.emphasise-txt {
 }
 
 .logo-title {
+  margin: 0;
+  margin-left: 20px;
   margin-left: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
