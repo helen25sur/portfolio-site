@@ -9,7 +9,7 @@ btn.addEventListener('click', () => {
 const jobTitle = document.querySelector('.about__job-title');
 let nStrJobTitle = '';
 [...jobTitle.innerText].forEach((letter, idx) => {
-  nStrJobTitle += `<span class="title-animate animate__animated" style="animation-delay: ${idx / 10}s;">${letter}</span>`;
+  nStrJobTitle += `<span class="title-animate" style="animation-delay: ${idx / 10}s;">${letter}</span>`;
 });
 jobTitle.innerHTML = '';
 jobTitle.innerHTML = nStrJobTitle;
