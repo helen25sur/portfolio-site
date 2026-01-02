@@ -664,3 +664,267 @@ a.emphasise-txt {
   background: var(--gradient-red-hover);
   color: var(--clr-white);
 }
+
+@media screen and (max-width: 900px) {
+  .btn {
+  border: none;
+  background-color: transparent;
+}
+
+.mob-burger {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  cursor: pointer;
+  z-index: 100;
+  transform: translateX(40px);
+  position: relative;
+}
+
+.mob-burger-span {
+  width: 32px;
+  height: 3px;
+  background-color: var(--clr-tertiary);
+  margin-bottom: 4px;
+  border-radius: 2px;
+}
+
+.mob-burger-span:nth-of-type(2) {
+  transition: opacity 0.4s ease-in-out;
+}
+
+.mob-burger-span:last-of-type {
+  margin-bottom: 0;
+}
+
+.animated .mob-burger-span:nth-of-type(1) {
+  animation: openMenu1 0.4s ease-in-out 1 forwards;
+}
+
+.animated .mob-burger-span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.animated .mob-burger-span:nth-of-type(3) {
+  animation: openMenu2 0.4s ease-in-out 1 forwards;
+}
+
+.not-animated .mob-burger-span:nth-of-type(1) {
+  animation: closeMenu1 0.4s ease-in-out 1 forwards;
+}
+
+.not-animated .mob-burger-span:nth-of-type(2) {
+  opacity: 1;
+}
+
+.not-animated .mob-burger-span:nth-of-type(3) {
+  animation: closeMenu2 0.4s ease-in-out 1 forwards;
+}
+
+.nav-list {
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 96px;
+  left: 0;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: var(--clr-secondary);
+  transform: translateY(-300px);
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  z-index: 50;
+}
+
+
+.animated~.nav-list {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.not-animated~.nav-list {
+  opacity: 0;
+  transform: translateY(-300px);
+}
+
+@keyframes openMenu1 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+
+  100% {
+    transform: rotate(-45deg) translateX(-5px) translateY(5px);
+  }
+}
+
+@keyframes openMenu2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: rotate(45deg) translateX(-5px) translateY(-5px);
+  }
+}
+
+@keyframes closeMenu1 {
+  0% {
+    transform: rotate(-45deg) translateX(-5px) translateY(5px);
+  }
+
+  50% {
+    transform: rotate(0) translateX(5px) translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes closeMenu2 {
+  0% {
+    transform: rotate(45deg) translateX(-5px) translateY(-5px);
+  }
+
+  50% {
+    transform: rotate(0) translateX(5px) translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+
+  }
+}
+
+
+/* .about-section */
+}
+
+@media (max-width: 768px) {
+  .about__job-title:after{
+    animation: none !important;
+    display: none !important;
+  }
+
+  .title-animate {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .animate__animated {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .section-title {
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-header h2,
+  .about-header h2 {
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .features-list {
+    margin-top: 3rem;
+  }
+
+  .features-title {
+    font-size: 20px;
+  }
+
+  .about-descr {
+    width: 100%;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-img {
+    max-width: 50%;
+  }
+
+  .resume-list-block {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .about__job-title::after {
+    animation: none;
+  }
+
+  .title-animate {
+    animation: none;
+    opacity: 1;
+  }
+
+  .contact-img {
+    max-width: 75%;
+  }
+
+  .contacts-list {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-header {
+    padding: 0 32px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .hero-header h2,
+  .about-header h2 {
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .social-caption {
+    font-size: 18px;
+  }
+
+  .features-section {
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (max-height: 400px) {
+
+  .hero-header h2,
+  .about-header h2 {
+    margin-bottom: 2rem;
+  }
+
+  .features-icon {
+    font-size: 24px;
+  }
+}
