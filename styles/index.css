@@ -300,13 +300,16 @@ a.emphasise-txt {
   top: 4px;
 }
 
-.portfolio-title:hover {
-  fill: var(--clr-subtitle);
+.portfolio-item:hover {
   cursor: pointer;
+}
+
+.portfolio-item:hover .portfolio-title {
+  fill: var(--clr-subtitle);
   transition: var(--transition);
 }
 
-.portfolio-title:hover svg {
+.portfolio-item:hover .portfolio-title svg {
   opacity: 1;
   margin-left: 8px;
   transition: var(--transition);
@@ -592,19 +595,27 @@ a.emphasise-txt {
   z-index: 2;
   box-shadow: var(--shadow-white-3);
   color: var(--clr-primary);
+  transition: var(--transition);
 }
 
 .close-card-btn:hover {
   background: var(--gradient-red-hover);
   color: var(--clr-white);
-  transition: var(--transition);
 }
 
-.close-card.fa-x {
+.close-card-btn svg {
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: var(--clr-subtitle);
+  transition: var(--transition);
+}
+
+.close-card-btn:hover svg {
+  fill: var(--clr-white); 
 }
 
 .portfolio-card-title {
