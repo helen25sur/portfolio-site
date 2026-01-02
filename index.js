@@ -2,6 +2,16 @@ import { createRoot } from "react-dom/client";
 import { ProjectList } from "./scripts/ProjectList.js";
 
 const projects = [
+  {
+    id: "icf-coaching-site",
+    name: "ICF Coaching Landing",
+    img: "/assets/images/projects/icf-coaching-site.png",
+    imgSmall: "/assets/images/projects/icf-coaching-site-small.webp",
+    tech: ["HTML5", "React.js", "Tailwind CSS", "Gatsby.js"],
+    description: "This high-performance landing page was developed using Gatsby.js for a professional educational platform focusing on career coaching. The project demonstrates a masterful use of Tailwind CSS to create a clean, business-oriented interface with a clear content hierarchy. By leveraging static site generation, the platform ensures near-instant loading speeds and high performance, which are critical for visitor conversion. The page structure includes logically organized blocks for the program and speakers, providing an intuitive user journey toward registration.",
+    link: "https://icf-coaching.netlify.app/",
+    codeLink: "https://github.com/helen25sur/ICF-coaching-landing",
+  },
     {
     id: "product-store-tailwind",
     name: "Product Store with Tailwind CSS",
