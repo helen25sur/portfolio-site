@@ -3,7 +3,13 @@ const btn = document.getElementById('mob-menu-btn');
 btn.addEventListener('click', () => {
   btn.classList.toggle('animated');
   btn.classList.toggle('not-animated');
-  console.log('Burger menu button clicked');
+});
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    btn.classList.remove('animated'); 
+    btn.classList.add('not-animated');
+  });
 });
 
 const jobTitle = document.querySelector('.about__job-title');
