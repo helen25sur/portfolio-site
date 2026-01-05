@@ -114,6 +114,10 @@
 .about-photo-wrapper {
   padding: 0 2rem;
   position: relative;
+  aspect-ratio: 408 / 612;
+  width: 100%; 
+  max-width: 408px;
+  background-color: #f3f3f3;
 }
 
 .about-photo-wrapper::after {
@@ -128,6 +132,20 @@
   background: var(--gradient-box-w);
 }
 
+.my-photo {
+  width: 100%;
+  height: 100%; 
+  display: block;
+  object-fit: cover;
+}
+
+.item-image-wrapper {
+  aspect-ratio: 591 / 328;
+  width: 100%; 
+  max-width: 591px;
+  background-color: #f3f3f3;
+}
+
 @media screen and (max-width: 900px) {
   .about-section {
   flex-direction: column;
@@ -140,17 +158,7 @@
 .about-photo-wrapper {
   order: 0;
   margin-bottom: 4rem;
-  aspect-ratio: 408 / 612;
-  width: 100%; 
-  max-width: 408px;
-  background-color: #f3f3f3;
-}
-
-.my-photo {
-  width: 100%;
-  height: 100%; 
-  display: block;
-  object-fit: cover;
+  
 }
 
 .portfolio-image-block {
@@ -161,13 +169,13 @@
   width: 100%;
 }
 
+}
+
 @media (max-width: 768px) {
   .title-animate {
     animation: none !important;
     opacity: 1 !important;
   }
-}
-
 }
   </style>
 
