@@ -13,9 +13,12 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 const jobTitle = document.querySelector('.about__job-title');
-let nStrJobTitle = '';
-[...jobTitle.innerText].forEach((letter, idx) => {
-  nStrJobTitle += `<span class="title-animate" style="animation-delay: ${idx / 10}s;">${letter}</span>`;
-});
-jobTitle.innerHTML = '';
-jobTitle.innerHTML = nStrJobTitle;
+if (window.innerWidth > 768 && jobTitle) {
+  let nStrJobTitle = '';
+  [...jobTitle.innerText].forEach((letter, idx) => {
+    nStrJobTitle += `<span class="title-animate" style="animation-delay: ${idx / 10}s;">${letter}</span>`;
+  });
+  jobTitle.innerHTML = '';
+  jobTitle.innerHTML = nStrJobTitle;
+
+}

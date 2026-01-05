@@ -14,12 +14,9 @@
   <meta property="og:type" content="website">
   <title>Olena Surilova | Web Developer</title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500&display=swap"
-    rel="stylesheet" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <link rel="preload" as="style" href="/styles/index.css" >
   <link rel="stylesheet" href="/styles/index.css" >
   
@@ -162,6 +159,13 @@
 
 .portfolio-card-content{
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .title-animate {
+    animation: none !important;
+    opacity: 1 !important;
+  }
 }
 
 }
