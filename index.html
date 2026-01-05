@@ -143,12 +143,17 @@
 .about-photo-wrapper {
   order: 0;
   margin-bottom: 4rem;
+  aspect-ratio: 408 / 612;
+  width: 100%; 
+  max-width: 408px;
+  background-color: #f3f3f3;
 }
 
 .my-photo {
   width: 100%;
-  height: auto;
-  aspect-ratio: 400 / 600;
+  height: 100%; 
+  display: block;
+  object-fit: cover;
 }
 
 .portfolio-image-block {
