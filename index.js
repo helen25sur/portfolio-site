@@ -29,7 +29,7 @@ const projects = [
     imgSmall: "/assets/images/projects/bookshelf-vue-app-small.webp",
     tech:  ["HTML5", "CSS3", "JavaScript (ES6+)", "Vue.js", "REST API"],
     description: "This dynamic web application, built with Vue.js, is designed for the convenient search and organization of a personal library through seamless integration with external REST APIs. The project demonstrates proficiency in a modern component-based architecture, where every interface element—from book cards to navigation—is isolated and scalable. By implementing filtering and categorization features, users can effortlessly switch between bestseller lists and their own reading preferences. Special attention is paid to visual hierarchy and UX design, ensuring an aesthetic and intuitive presentation of extensive data sets. The responsive layout guarantees flawless performance across all devices, maintaining high speed and a smooth interface response.",
-    link: "https://helen25sur.github.io/Bookshelf-app/",
+    link: "https://bookshelf-vue.netlify.app/",
     codeLink: "https://github.com/helen25sur/Bookshelf-app",
   },
   {
@@ -96,10 +96,20 @@ const projects = [
     name: "Online Shop 'Candeleaf'",
     img: "/assets/images/projects/candeleaf-site.png",
     imgSmall: "/assets/images/projects/candeleaf-site-small.webp",
-    tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "Node.js", "Express.js", "REST API"],
+    tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "Node.js & Express.js", "REST API"],
     description: "A clean, nature-inspired e-commerce application designed to provide a seamless shopping experience for organic products. The project focuses on minimalist aesthetics combined with robust backend functionality. Developed a full-cycle shopping experience, including a dynamic product catalog, detailed item views, and a functional shopping cart system. Powered by Node.js, the application handles data efficiently, ensuring smooth communication between the user interface and the server-side logic.", 
     link: "https://candleaf2.onrender.com/",
     codeLink: "https://github.com/helen25sur/online-shop-nodejs",
+  },
+  {
+    id: "task-manager-node",
+    name: "Task Manager App",
+    img: "/assets/images/projects/task-manager-node.png",
+    imgSmall: "/assets/images/projects/task-manager-node-small.webp",
+    tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "Node.js & Express.js", "REST API"],
+    description: "This Task Manager App is a robust full-stack application designed to streamline daily productivity through an intuitive and minimalist user interface. Built with Node.js and Express.js, the project features a custom REST API that handles all essential CRUD operations for efficient task management. The application provides a seamless user experience with real-time updates, allowing users to easily add, edit, and track the status of their to-do lists. It also includes a modern dark/light theme toggle and detailed task metadata, such as creation and modification timestamps. This project showcases a solid understanding of backend logic combined with a clean, responsive frontend design.", 
+    link: "https://todo-nodejs-hf6g.onrender.com/",
+    codeLink: "https://github.com/helen25sur/todo-nodejs",
   },
   {
     id: "hofmann-site",
@@ -134,7 +144,7 @@ const projects = [
 ];
 
 const technologies = [
- "All", "HTML5", "CSS3", "JavaScript (ES6+)", "React.js", "Vue.js", "Node.js", "Express.js", "REST API", "Tailwind CSS",
+ "All", "HTML5", "CSS3", "JavaScript (ES6+)", "React.js", "Vue.js", "Node.js & Express.js", "REST API", "Tailwind CSS",
    ]
 
 const container = document.getElementById("portfolio");
