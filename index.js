@@ -112,6 +112,16 @@ const projects = [
     codeLink: "https://github.com/helen25sur/todo-nodejs",
   },
   {
+    id: "product-page-plants",
+    name: "Product Page 'Plants'",
+    img: "/assets/images/projects/product-page-plants.png",
+    imgSmall: "/assets/images/projects/product-page-plants-small.webp",
+    tech:  ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    description: "This stylish landing page is designed to promote an indoor plant brand, focusing on a fresh, \"breathable\" aesthetic and clear visual hierarchy. The project features a well-structured layout that includes an integrated video showcase, benefit sections, and a clean navigation menu to guide users through the brand's story. Developed with a focus on responsive design, the landing ensures that the green, nature-inspired theme translates perfectly across all screen sizes. It effectively demonstrates the use of HTML5, CSS3, and JavaScript to create an engaging, modern web presence that balances multimedia content with readable typography.",
+    link: "https://helen25sur.github.io/ProductPage-Plants/",
+    codeLink: "https://github.com/helen25sur/ProductPage-Plants",
+  },
+  {
     id: "hofmann-site",
     name: "Landing Site 'Hofmann'",
     img: "/assets/images/projects/hofmann-site.png",
