@@ -16,44 +16,58 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="preload" as="style" href="/styles/index.css" >
   <link rel="stylesheet" href="/styles/index.css" >
+
+  <link rel="preload" href="./static/assets/fonts/Montserrat/woff/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./static/assets/fonts/Montserrat/woff/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./static/assets/fonts/Montserrat/woff/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./static/assets/fonts/Poppins/woff/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./static/assets/fonts/Poppins/woff/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
   
   <style>
     /* ============== fonts ================ */
-    @font-face {
-      font-family: 'Montserrat';
-      font-weight: 400;
+   @font-face {
+    font-family: 'Montserrat';
+    src: url('./static/assets/fonts/Montserrat/woff/Montserrat-Medium.woff2') format('woff2'),
+        url('./static/assets/fonts/Montserrat/woff/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./static/assets/fonts/Montserrat/woff/Montserrat-Bold.woff2') format('woff2'),
+        url('./static/assets/fonts/Montserrat/woff/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./static/assets/fonts/Montserrat/woff/Montserrat-Regular.woff2') format('woff2'),
+        url('./static/assets/fonts/Montserrat/woff/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+      @font-face {
+      font-family: 'Poppins';
+      src: url('./static/assets/fonts/Poppins/woff/Poppins-Regular.woff2') format('woff2'),
+          url('./static/assets/fonts/Poppins/woff/Poppins-Regular.woff') format('woff');
+      font-weight: normal;
       font-style: normal;
       font-display: swap;
-      src: url('./static/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Montserrat';
+  }
+
+  @font-face {
+      font-family: 'Poppins';
+      src: url('./static/assets/fonts/Poppins/woff/Poppins-Medium.woff2') format('woff2'),
+          url('./static/assets/fonts/Poppins/woff/Poppins-Medium.woff') format('woff');
       font-weight: 500;
       font-style: normal;
       font-display: swap;
-      src: url('./static/assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Montserrat';
-      font-weight: 700;
-      font-style: normal;
-      font-display: swap;
-      src: url('./static/assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Poppins';
-      font-weight: 400;
-      font-style: normal;
-      font-display: swap;
-      src: url('./static/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
-    }
-    @font-face {
-      font-family: 'Poppins';
-      font-weight: 500;
-      font-style: normal;
-      font-display: swap;
-      src: url('./static/assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
-    }
+      }
     /* ============= about-section =============== */
 .about-section {
   padding: 6rem 0;
