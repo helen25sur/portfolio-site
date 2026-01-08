@@ -93,7 +93,7 @@ const projects = [
   },
    {
     id: "candeleaf-site",
-    name: "Online Shop 'Candeleaf'",
+    name: "Online Shop 'Candeleaf' (in progress)",
     img: "/assets/images/projects/candeleaf-site.png",
     imgSmall: "/assets/images/projects/candeleaf-site-small.webp",
     tech: ["HTML5", "CSS3", "JavaScript (ES6+)", "Node.js & Express.js", "REST API"],
@@ -123,7 +123,7 @@ const projects = [
   },
   {
     id: "hofmann-site",
-    name: "Landing Site 'Hofmann'",
+    name: "Landing 'Hofmann'",
     img: "/assets/images/projects/hofmann-site.png",
     imgSmall: "/assets/images/projects/hofmann-site-small.webp",
     tech:  ["HTML5", "CSS3", "BEM Methodology", "Responsive Design"],
@@ -133,7 +133,7 @@ const projects = [
   },
   {
     id: "lakehouse-site",
-    name: "Landing Site 'Lake House'",
+    name: "Landing 'Lake House'",
     img: "/assets/images/projects/lakehouse-site.png",
     imgSmall: "/assets/images/projects/lakehouse-site-small.webp",
     tech:  ["HTML5", "CSS3", "Responsive Design"],
@@ -143,7 +143,7 @@ const projects = [
   },
   {
     id: "magnatagallo-site",
-    name: "Landing Site 'Magnata Gallo'",
+    name: "Landing 'Magnata Gallo'",
     img: "/assets/images/projects/magnatagallo-site.png",
     imgSmall: "/assets/images/projects/magnatagallo-site-small.webp",
     tech: ["HTML5", "CSS3", "BEM Methodology", "Responsive Design"],
