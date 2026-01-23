@@ -1,6 +1,6 @@
 # 🌿 Portfolio — Olena Surilova
 
-Welcome to my personal portfolio website — a clean, responsive showcase of my web development skills and projects. Designed to highlight my work and growth as a front-end developer, this portfolio presents completed projects, links to live demos, and an overview of technologies I use.
+Welcome to my personal portfolio website — a clean, responsive showcase of my web development skills and projects. Designed to showcase my work and growth as a front-end developer, this portfolio features completed projects, live demo links, and an overview of the technologies I use.
 
 🔗 **Live Demo:** https://surilova.netlify.app/
 
